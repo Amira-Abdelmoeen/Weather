@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-dark p-5 text-white" data-bs-theme="dark">
+        <div class="container">
+            <div class="header">
+                <img src="images/images1.png" alt="Logo" width="62" height="38"
+                    class="d-inline-block align-text-top me-2">
+                <a class="navbar-brand" href="#">
+                    Weather
+                </a>
+
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto ">
+                    <li class="nav-item px-3 py-0">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item px-3 py-0">
+                        <a class="nav-link active" aria-current="page" href="#">News</a>
+                    </li>
+                    <li class="nav-item px-3 py-0">
+                        <a class="nav-link active" aria-current="page" href="#">Live Cameras</a>
+                    </li>
+                    <li class="nav-item px-3 py-0">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item px-3 py-0">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <main class="pb-5">
+     <div class="search  ">
+        <div class="container py-3 ">
+            <div class="row mt-5 pb-5 position-relative">
+                <input type="text" id="search" onchange="search()"  class="col-lg-12 p-3 rounded-5 bg-dark" placeholder="find your loction">
+                <div class="find position-absolute ">
+                    <span class="text-white bg-primary find2 rounded-5 fs-6 ">Find</span>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+
+    <section class="weather ">
+        <div class="container mt-">
+            <div class="row text-white">
+                <div class="col-lg-4 content-weather p-0">
+                    <div class="date ">
+                        <div class="d-flex justify-content-between p-2">
+                            <span class="day-name">Thursday</span>
+                            <span id="date">11January</span>
+                        </div>
+                    </div>
+                    <div class="info p-4">
+                        <span id="location-name" class="py-5 fs-5 ">cairo</span>
+                        <div class="temp d-flex justify-content-between">
+                            <h1  class="text-white temp-c">16<sup>o</sup>C </h1>
+                            <img class="icon" src="images/images3.png" alt="not-loaded" width="90" height="90"
+                                class="d-inline-block align-text-top me-2">
+                        </div>
+                        <h6 class="status" class="text-primary mt-4 mb-3 ">Clr</h5>
+                            <div class="icons d-flex flex-row py-1">
+                                <div class="icon1">
+                                    <img src="images/images4.png" alt="Logo" width="20" height="20"
+                                        class="d-inline-block align-text-center ">
+                                    <span class="">20%</span>
+                                </div>
+                                <div class="icon1 ms-3">
+                                    <img src="images/images5.png" alt="Logo" width="20" height="20"
+                                        class="d-inline-block align-text-center ">
+                                    <span id="velocity" class="">1Km/h</span>
+                                </div>
+                                <div class="icon1 ms-3">
+                                    <img src="images/images6.png" alt="Logo" width="20" height="20"
+                                        class="d-inline-block align-text-center ">
+                                    <span id="velocity-dir" class="">East</span>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 content-weather2 p-0 ">
+                    <div class=" date2  text-center p-2">
+                        <span class="day-name">Friday</span>
+                    </div>
+                    <div class="info2 d-flex flex-column justify-content-center align-items-center  p-5">
+                       <img src="images/images7.png" width="45" alt="not-loaded" class="icon">
+                       <h4 class="pt-3 temp-c">18.8C</h4>
+                       <h5 class="temp-f">10.6</h5>
+                       <span class="text-primary py-3 status">Sunny</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 content-weather p-0 ">
+                    <div class=" date  text-center p-2">
+                        <span class="day-name">Friday</span>
+                    </div>
+                    <div class="info2 d-flex flex-column justify-content-center align-items-center  p-5">
+                       <img src="images/images7.png" width="45" alt="not-loaded" class="icon">
+                       <h4 class="pt-3 temp-c">18.8C</h4>
+                       <h5 class="temp-f">10.6</h5>
+                       <span class="text-primary py-3 status">Sunny</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </main>
+
+    <footer>
+        
+        <div class="container py-3  py-5">
+            <div class="row ">
+            <div class="try  d-flex flex-row justify-content-between align-items-center">
+            <div class="col-lg-8 position-relative">
+                <input type="text" id="search" class="col-lg-12 p-3 rounded-5 bg-dark " placeholder="Enter your email to subscribe">
+                <div class="subscribe position-absolute">
+                    <span class="text-white bg-primary py-3 px-4 rounded-5 fs-6 ">Subscribe</span>
+                </div>
+            </div>
+
+            <div class="col-lg-2">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter ms-1"></i>
+                    <i class="fa-brands fa-instagram ms-1"></i>
+                    <i class="fa-brands fa-pinterest ms-1"></i>
+                </div>
+            </div>
+        </div>
+            </div>
+
+            <p class="text-white pt-4 pb-3">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
