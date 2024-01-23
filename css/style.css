@@ -5,15 +5,15 @@
 .nav-link:hover{
     color: #0D6EFD !important;
 }
-.nav-item:hover{
-    border: 3px solid #0D6EFD;
-    border-radius: 25px;
-   
-}
 .nav-item{
     border: 3px solid transparent;
     border-radius: 25px;
 }
+.nav-item:hover,.active{
+    border: 3px solid #0D6EFD;
+    border-radius: 25px;
+}
+
 .navbar-brand{
     color: white;
     font-size: 18px;
@@ -21,17 +21,15 @@
 .navbar-brand:hover{
     color: white;
 }
-#search{
-    
-}
+
 .find{
    width: fit-content;
-   top: 30%;
+   top: 16%;
    right: -0.5%;
    
 }
 .find2{
-    padding: 16px 40px;
+    padding: 14px 40px;
 }
 .temp h1{
     font-size: 90px;
