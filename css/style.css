@@ -1,8 +1,8 @@
 .nav-link{
-    color: white !important;
+    color: white ;
     font-size: 14px;
 }
-.nav-link:hover{
+.nav-link:hover,.active{
     color: #0D6EFD !important;
 }
 .nav-item{
@@ -10,6 +10,10 @@
     border-radius: 25px;
 }
 .nav-item:hover,.active{
+    border: 3px solid #0D6EFD;
+    border-radius: 25px;
+}
+.active{
     border: 3px solid #0D6EFD;
     border-radius: 25px;
 }
@@ -81,6 +85,6 @@ main{
     background-repeat: no-repeat;
     background-color: #1e202b;
 }
-.info{
-    /* color:#8E8F94; */
+.sub{
+    padding: 14px 23px;
 }
